@@ -2,6 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/study-club-application.iml" filepath="$PROJECT_DIR$/study-club-application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-club-application-controller.iml" filepath="$PROJECT_DIR$/study-club-application-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-club-application-job.iml" filepath="$PROJECT_DIR$/study-club-application-job.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-club-application-mq.iml" filepath="$PROJECT_DIR$/study-club-application-mq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-club-common.iml" filepath="$PROJECT_DIR$/study-club-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-club-domain.iml" filepath="$PROJECT_DIR$/study-club-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-club-infra.iml" filepath="$PROJECT_DIR$/study-club-infra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-club-starter.iml" filepath="$PROJECT_DIR$/study-club-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-club-subject.iml" filepath="$PROJECT_DIR$/study-club-subject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-club-subject-api.iml" filepath="$PROJECT_DIR$/study-club-subject-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/studyclub.iml" filepath="$PROJECT_DIR$/.idea/studyclub.iml" />
     </modules>
   </component>
