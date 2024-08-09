@@ -11,8 +11,8 @@
         <module name="study-club-application" />
         <module name="study-club-application-controller" />
         <module name="study-club-application-job" />
-        <module name="study-club-domain" />
         <module name="study-club-application-mq" />
+        <module name="study-club-domain" />
         <module name="study-club-subject-api" />
         <module name="study-club-infra" />
       </profile>
