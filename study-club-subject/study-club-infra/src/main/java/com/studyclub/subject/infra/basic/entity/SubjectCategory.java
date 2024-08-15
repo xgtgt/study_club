@@ -1,5 +1,7 @@
 package com.studyclub.subject.infra.basic.entity;
 
+import lombok.Data;
+
 import java.util.Date;
 import java.io.Serializable;
 
@@ -9,6 +11,7 @@ import java.io.Serializable;
  * @author makejava
  * @since 2024-08-09 00:15:23
  */
+@Data
 public class SubjectCategory implements Serializable {
     private static final long serialVersionUID = -90605179622261724L;
     /**
