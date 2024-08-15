@@ -23,6 +23,11 @@
             <artifactId>study-club-infra</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.studyclub</groupId>
+            <artifactId>study-club-domain</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 
