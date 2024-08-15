@@ -8,6 +8,7 @@ import com.studyclub.subject.common.entity.Result;
 import com.studyclub.subject.domain.entity.SubjectCategoryBO;
 import com.studyclub.subject.domain.service.SubjectCategoryDomainService;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -26,24 +27,24 @@ public class SubjectCategoryController {
 
     @Resource
     private SubjectCategoryDomainService subjectCategoryDomainService;
-
+    /**
+     * 新增分类
+     */
     @PostMapping("/add")
-    public Result<Boolean> add(@RequestBody SubjectCategoryDTO subjectCategoryDTO){
-        try{
-            if (log.isInfoEnabled()){
+    public Result<Boolean> add(@RequestBody SubjectCategoryDTO subjectCategoryDTO) {
+        try {
+            if (log.isInfoEnabled()) {
                 log.info("SubjectCategoryController.add.dto:{}", JSON.toJSONString(subjectCategoryDTO));
             }
-
             Preconditions.checkNotNull(subjectCategoryDTO.getCategoryType(), "分类类型不能为空");
-            Preconditions.checkNotNull(subjectCategoryDTO.getCategoryName(), "分类名称不能为空");
+            Preconditions.checkArgument(!StringUtils.isBlank(subjectCategoryDTO.getCategoryName()), "分类名称不能为空");
             Preconditions.checkNotNull(subjectCategoryDTO.getParentId(), "分类父级id不能为空");
-
             SubjectCategoryBO subjectCategoryBO = SubjectCategoryDTOConverter.INSTANCE.convertDtoToCategoryBO(subjectCategoryDTO);
             subjectCategoryDomainService.add(subjectCategoryBO);
             return Result.ok(true);
-        }catch (Exception e){
-            log.error("SubjectCategoryController.add.error:{}",e.getMessage(),e);
-            return Result.fail(e.getMessage());
+        } catch (Exception e) {
+            log.error("SubjectCategoryController.add.error:{}", e.getMessage(), e);
+            return Result.fail("新增分类失败");
         }
     }
 

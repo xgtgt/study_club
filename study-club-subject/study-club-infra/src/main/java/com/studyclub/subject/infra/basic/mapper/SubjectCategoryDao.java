@@ -21,6 +21,14 @@ public interface SubjectCategoryDao {
     SubjectCategory queryById(Long id);
 
     /**
+     * 统计总行数
+     *
+     * @param subjectCategory 查询条件
+     * @return 总行数
+     */
+    long count(SubjectCategory subjectCategory);
+
+    /**
      * 新增数据
      *
      * @param subjectCategory 实例对象
