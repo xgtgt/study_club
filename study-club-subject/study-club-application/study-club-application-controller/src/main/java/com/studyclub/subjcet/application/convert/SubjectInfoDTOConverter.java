@@ -22,7 +22,9 @@ public interface SubjectInfoDTOConverter {
 
     SubjectInfoBO convertDTOToBO(SubjectInfoDTO subjectInfoDTO);
 
-    SubjectInfo convertBoToInfo(SubjectInfoBO subjectInfoBO);
+    SubjectInfoDTO convertBOToDTO(SubjectInfoBO boResult);
 
-    List<SubjectInfoBO> convertListInfoToBO(List<SubjectInfo> subjectInfoList);
+    List<SubjectInfoDTO> convertBOToDTOList(List<SubjectInfoBO> subjectInfoBO);
+
+
 }

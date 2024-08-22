@@ -13,7 +13,7 @@ import java.io.Serializable;
  */
 @Data
 public class SubjectRadio implements Serializable {
-    private static final long serialVersionUID = -21375085848089949L;
+    private static final long serialVersionUID = 528349687787614869L;
     /**
      * 主键
      */
@@ -50,7 +50,7 @@ public class SubjectRadio implements Serializable {
      * 修改时间
      */
     private Date updateTime;
-    
+
     private Integer isDeleted;
 
 }

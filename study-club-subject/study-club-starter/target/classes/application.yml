@@ -1,5 +1,5 @@
 server:
-  port: 3000
+  port: 3010
 spring:
   datasource:
     username: root
@@ -30,3 +30,6 @@ spring:
 publicKey: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBALuMoJwcc2cKI0xekwTzG1Iq+4uH36XEihajGgjlMDXu6ske4g6Em5h+CKCxtDZGu6mVrF7BHYhaRuVFmYEOHHkCAwEAAQ==
 logging:
   config: classpath:log4j2-spring.xml
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

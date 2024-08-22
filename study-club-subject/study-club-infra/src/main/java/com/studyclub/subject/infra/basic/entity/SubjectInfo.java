@@ -2,6 +2,7 @@ package com.studyclub.subject.infra.basic.entity;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -11,7 +12,7 @@ import java.util.Date;
  * @Version: 1.0
  */
 @Data
-public class SubjectInfo {
+public class SubjectInfo implements Serializable {
 
     private static final long serialVersionUID = 754979688758369677L;
     /**

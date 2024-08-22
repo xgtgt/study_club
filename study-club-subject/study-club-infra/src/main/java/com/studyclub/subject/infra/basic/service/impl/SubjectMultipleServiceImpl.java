@@ -70,4 +70,9 @@ public class SubjectMultipleServiceImpl implements SubjectMultipleService {
     public List<SubjectMultiple> queryByCondition(SubjectMultiple subjectMultiple) {
         return this.subjectMultipleDao.queryAllByLimit(subjectMultiple);
     }
+
+    @Override
+    public void batchInsert(List<SubjectMultiple> subjectMultipleList) {
+        this.subjectMultipleDao.insertBatch(subjectMultipleList);
+    }
 }

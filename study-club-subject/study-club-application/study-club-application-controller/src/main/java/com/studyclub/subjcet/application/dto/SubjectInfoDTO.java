@@ -1,8 +1,10 @@
 package com.studyclub.subjcet.application.dto;
 
+import com.studyclub.subject.common.entity.PageInfo;
 import com.studyclub.subject.domain.entity.SubjectAnswerBO;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -12,7 +14,7 @@ import java.util.List;
  * @Version: 1.0
  */
 @Data
-public class SubjectInfoDTO {
+public class SubjectInfoDTO extends PageInfo implements Serializable {
 
     /**
      * 主键

@@ -2,6 +2,8 @@ package com.studyclub.subjcet.application.dto;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
  * @Author: xgt
  * @CreateTime: 2024-08-16
@@ -9,7 +11,7 @@ import lombok.Data;
  * @Version: 1.0
  */
 @Data
-public class SubjectAnswerDTO {
+public class SubjectAnswerDTO implements Serializable {
 
     /**
      * 答案选项标识

@@ -1,7 +1,9 @@
 package com.studyclub.subject.domain.entity;
 
+import com.studyclub.subject.common.entity.PageInfo;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -11,7 +13,7 @@ import java.util.List;
  * @Version: 1.0
  */
 @Data
-public class SubjectInfoBO {
+public class SubjectInfoBO extends PageInfo implements Serializable {
 
     /**
      * 主键

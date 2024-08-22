@@ -44,4 +44,11 @@ public interface SubjectInfoService {
      */
     boolean deleteById(Long id);
 
+    int countByCondition(SubjectInfo subjectInfo, Long categoryId, Long labelId);
+
+    List<SubjectInfo> queryPage(SubjectInfo subjectInfo, Long categoryId, Long labelId, int start, Integer pageSize);
+
+    List<SubjectInfo> getContributeCount();
+
+    Long querySubjectIdCursor(Long subjectId, Long categoryId, Long labelId, int cursor);
 }

@@ -10,7 +10,7 @@
       <configuration />
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -47,6 +47,7 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.3.3" level="project" />
     <orderEntry type="module" module-name="study-club-application-controller" />
     <orderEntry type="module" module-name="study-club-domain" />
+    <orderEntry type="library" name="Maven: io.github.openfeign:feign-core:10.12" level="project" />
     <orderEntry type="module" module-name="study-club-infra" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:2.4.2" level="project" />
     <orderEntry type="library" name="Maven: com.zaxxer:HikariCP:3.4.5" level="project" />

@@ -4,14 +4,13 @@ import com.studyclub.subjcet.application.dto.SubjectAnswerDTO;
 import com.studyclub.subjcet.application.dto.SubjectInfoDTO;
 import com.studyclub.subject.domain.entity.SubjectAnswerBO;
 import com.studyclub.subject.domain.entity.SubjectInfoBO;
-import com.studyclub.subject.infra.basic.entity.SubjectInfo;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-08-16T02:57:54+1000",
+    date = "2024-08-20T17:17:29+1000",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 1.8.0_422 (Amazon.com Inc.)"
 )
 public class SubjectInfoDTOConverterImpl implements SubjectInfoDTOConverter {
@@ -24,6 +23,8 @@ public class SubjectInfoDTOConverterImpl implements SubjectInfoDTOConverter {
 
         SubjectInfoBO subjectInfoBO = new SubjectInfoBO();
 
+        subjectInfoBO.setPageNo( subjectInfoDTO.getPageNo() );
+        subjectInfoBO.setPageSize( subjectInfoDTO.getPageSize() );
         subjectInfoBO.setId( subjectInfoDTO.getId() );
         subjectInfoBO.setSubjectName( subjectInfoDTO.getSubjectName() );
         subjectInfoBO.setSubjectDifficult( subjectInfoDTO.getSubjectDifficult() );
@@ -60,34 +61,59 @@ public class SubjectInfoDTOConverterImpl implements SubjectInfoDTOConverter {
     }
 
     @Override
-    public SubjectInfo convertBoToInfo(SubjectInfoBO subjectInfoBO) {
+    public SubjectInfoDTO convertBOToDTO(SubjectInfoBO boResult) {
+        if ( boResult == null ) {
+            return null;
+        }
+
+        SubjectInfoDTO subjectInfoDTO = new SubjectInfoDTO();
+
+        subjectInfoDTO.setPageNo( boResult.getPageNo() );
+        subjectInfoDTO.setPageSize( boResult.getPageSize() );
+        subjectInfoDTO.setId( boResult.getId() );
+        subjectInfoDTO.setSubjectName( boResult.getSubjectName() );
+        subjectInfoDTO.setSubjectDifficult( boResult.getSubjectDifficult() );
+        subjectInfoDTO.setSettleName( boResult.getSettleName() );
+        subjectInfoDTO.setSubjectType( boResult.getSubjectType() );
+        subjectInfoDTO.setSubjectScore( boResult.getSubjectScore() );
+        subjectInfoDTO.setSubjectParse( boResult.getSubjectParse() );
+        subjectInfoDTO.setSubjectAnswer( boResult.getSubjectAnswer() );
+        List<Integer> list = boResult.getCategoryIds();
+        if ( list != null ) {
+            subjectInfoDTO.setCategoryIds( new ArrayList<Integer>( list ) );
+        }
+        List<Integer> list1 = boResult.getLabelIds();
+        if ( list1 != null ) {
+            subjectInfoDTO.setLabelIds( new ArrayList<Integer>( list1 ) );
+        }
+        List<String> list2 = boResult.getLabelName();
+        if ( list2 != null ) {
+            subjectInfoDTO.setLabelName( new ArrayList<String>( list2 ) );
+        }
+        subjectInfoDTO.setOptionList( subjectAnswerBOListToSubjectAnswerDTOList( boResult.getOptionList() ) );
+        subjectInfoDTO.setCategoryId( boResult.getCategoryId() );
+        subjectInfoDTO.setLabelId( boResult.getLabelId() );
+        subjectInfoDTO.setKeyWord( boResult.getKeyWord() );
+        subjectInfoDTO.setCreateUser( boResult.getCreateUser() );
+        subjectInfoDTO.setCreateUserAvatar( boResult.getCreateUserAvatar() );
+        subjectInfoDTO.setSubjectCount( boResult.getSubjectCount() );
+        subjectInfoDTO.setLiked( boResult.getLiked() );
+        subjectInfoDTO.setLikedCount( boResult.getLikedCount() );
+        subjectInfoDTO.setNextSubjectId( boResult.getNextSubjectId() );
+        subjectInfoDTO.setLastSubjectId( boResult.getLastSubjectId() );
+
+        return subjectInfoDTO;
+    }
+
+    @Override
+    public List<SubjectInfoDTO> convertBOToDTOList(List<SubjectInfoBO> subjectInfoBO) {
         if ( subjectInfoBO == null ) {
             return null;
         }
 
-        SubjectInfo subjectInfo = new SubjectInfo();
-
-        subjectInfo.setId( subjectInfoBO.getId() );
-        subjectInfo.setSubjectName( subjectInfoBO.getSubjectName() );
-        subjectInfo.setSubjectDifficult( subjectInfoBO.getSubjectDifficult() );
-        subjectInfo.setSettleName( subjectInfoBO.getSettleName() );
-        subjectInfo.setSubjectType( subjectInfoBO.getSubjectType() );
-        subjectInfo.setSubjectScore( subjectInfoBO.getSubjectScore() );
-        subjectInfo.setSubjectParse( subjectInfoBO.getSubjectParse() );
-        subjectInfo.setSubjectCount( subjectInfoBO.getSubjectCount() );
-
-        return subjectInfo;
-    }
-
-    @Override
-    public List<SubjectInfoBO> convertListInfoToBO(List<SubjectInfo> subjectInfoList) {
-        if ( subjectInfoList == null ) {
-            return null;
-        }
-
-        List<SubjectInfoBO> list = new ArrayList<SubjectInfoBO>( subjectInfoList.size() );
-        for ( SubjectInfo subjectInfo : subjectInfoList ) {
-            list.add( subjectInfoToSubjectInfoBO( subjectInfo ) );
+        List<SubjectInfoDTO> list = new ArrayList<SubjectInfoDTO>( subjectInfoBO.size() );
+        for ( SubjectInfoBO subjectInfoBO1 : subjectInfoBO ) {
+            list.add( convertBOToDTO( subjectInfoBO1 ) );
         }
 
         return list;
@@ -120,22 +146,30 @@ public class SubjectInfoDTOConverterImpl implements SubjectInfoDTOConverter {
         return list1;
     }
 
-    protected SubjectInfoBO subjectInfoToSubjectInfoBO(SubjectInfo subjectInfo) {
-        if ( subjectInfo == null ) {
+    protected SubjectAnswerDTO subjectAnswerBOToSubjectAnswerDTO(SubjectAnswerBO subjectAnswerBO) {
+        if ( subjectAnswerBO == null ) {
             return null;
         }
 
-        SubjectInfoBO subjectInfoBO = new SubjectInfoBO();
+        SubjectAnswerDTO subjectAnswerDTO = new SubjectAnswerDTO();
 
-        subjectInfoBO.setId( subjectInfo.getId() );
-        subjectInfoBO.setSubjectName( subjectInfo.getSubjectName() );
-        subjectInfoBO.setSubjectDifficult( subjectInfo.getSubjectDifficult() );
-        subjectInfoBO.setSettleName( subjectInfo.getSettleName() );
-        subjectInfoBO.setSubjectType( subjectInfo.getSubjectType() );
-        subjectInfoBO.setSubjectScore( subjectInfo.getSubjectScore() );
-        subjectInfoBO.setSubjectParse( subjectInfo.getSubjectParse() );
-        subjectInfoBO.setSubjectCount( subjectInfo.getSubjectCount() );
+        subjectAnswerDTO.setOptionType( subjectAnswerBO.getOptionType() );
+        subjectAnswerDTO.setOptionContent( subjectAnswerBO.getOptionContent() );
+        subjectAnswerDTO.setIsCorrect( subjectAnswerBO.getIsCorrect() );
 
-        return subjectInfoBO;
+        return subjectAnswerDTO;
+    }
+
+    protected List<SubjectAnswerDTO> subjectAnswerBOListToSubjectAnswerDTOList(List<SubjectAnswerBO> list) {
+        if ( list == null ) {
+            return null;
+        }
+
+        List<SubjectAnswerDTO> list1 = new ArrayList<SubjectAnswerDTO>( list.size() );
+        for ( SubjectAnswerBO subjectAnswerBO : list ) {
+            list1.add( subjectAnswerBOToSubjectAnswerDTO( subjectAnswerBO ) );
+        }
+
+        return list1;
     }
 }
