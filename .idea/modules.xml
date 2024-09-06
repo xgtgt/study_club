@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/study-club-common-starter/easy-gen-code-spring-boot-starter/easy-gen-code-spring-boot-starter.iml" filepath="$PROJECT_DIR$/study-club-common-starter/easy-gen-code-spring-boot-starter/easy-gen-code-spring-boot-starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-club-subject/study-club-application/study-club-application.iml" filepath="$PROJECT_DIR$/study-club-subject/study-club-application/study-club-application.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-club-subject/study-club-application/study-club-application-controller/study-club-application-controller.iml" filepath="$PROJECT_DIR$/study-club-subject/study-club-application/study-club-application-controller/study-club-application-controller.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-club-subject/study-club-application/study-club-application-job/study-club-application-job.iml" filepath="$PROJECT_DIR$/study-club-subject/study-club-application/study-club-application-job/study-club-application-job.iml" />
@@ -17,13 +18,16 @@
       <module fileurl="file://$PROJECT_DIR$/study-club-auth/study-club-auth-infra/study-club-auth-infra.iml" filepath="$PROJECT_DIR$/study-club-auth/study-club-auth-infra/study-club-auth-infra.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-club-auth/study-club-auth-starter/study-club-auth-starter.iml" filepath="$PROJECT_DIR$/study-club-auth/study-club-auth-starter/study-club-auth-starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-club-subject/study-club-common/study-club-common.iml" filepath="$PROJECT_DIR$/study-club-subject/study-club-common/study-club-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-club-common-starter/study-club-common-starter.iml" filepath="$PROJECT_DIR$/study-club-common-starter/study-club-common-starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-club-subject/study-club-domain/study-club-domain.iml" filepath="$PROJECT_DIR$/study-club-subject/study-club-domain/study-club-domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-club-gateway/study-club-gateway.iml" filepath="$PROJECT_DIR$/study-club-gateway/study-club-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-club-gen/study-club-gen.iml" filepath="$PROJECT_DIR$/study-club-gen/study-club-gen.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-club-subject/study-club-infra/study-club-infra.iml" filepath="$PROJECT_DIR$/study-club-subject/study-club-infra/study-club-infra.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-club-oss.iml" filepath="$PROJECT_DIR$/study-club-oss.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-club-subject/study-club-starter/study-club-starter.iml" filepath="$PROJECT_DIR$/study-club-subject/study-club-starter/study-club-starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-club-subject/study-club-subject.iml" filepath="$PROJECT_DIR$/study-club-subject/study-club-subject.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-club-subject/study-club-subject-api/study-club-subject-api.iml" filepath="$PROJECT_DIR$/study-club-subject/study-club-subject-api/study-club-subject-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-club-wx/study-club-wx.iml" filepath="$PROJECT_DIR$/study-club-wx/study-club-wx.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/studyclub.iml" filepath="$PROJECT_DIR$/.idea/studyclub.iml" />
     </modules>
   </component>

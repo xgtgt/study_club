@@ -10,11 +10,12 @@ import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+
 /**
- * RedisUtil工具类
- *
- * @author: ChickenWing
- * @date: 2023/10/28
+ * @Author: xgt
+ * @CreateTime: 2024-08-31
+ * @Description:redis工具类
+ * @Version: 1.0
  */
 @Component
 @Slf4j

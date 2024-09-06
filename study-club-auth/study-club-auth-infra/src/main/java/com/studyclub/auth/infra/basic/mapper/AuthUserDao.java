@@ -9,7 +9,7 @@ import java.util.List;
  * (AuthUser)表数据库访问层
  *
  * @author makejava
- * @since 2023-11-01 01:25:22
+ * @since 2024-08-30 00:45:50
  */
 public interface AuthUserDao {
 

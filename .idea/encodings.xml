@@ -7,6 +7,8 @@
     <file url="file://$PROJECT_DIR$/study-club-auth/study-club-auth-starter/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/study-club-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/study-club-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/study-club-gen/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/study-club-gen/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/study-club-oss/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/study-club-oss/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/study-club-subject/study-club-common/src/main/java" charset="UTF-8" />
@@ -15,5 +17,7 @@
     <file url="file://$PROJECT_DIR$/study-club-subject/study-club-infra/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/study-club-subject/study-club-starter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/study-club-subject/study-club-starter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/study-club-wx/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/study-club-wx/src/main/resources" charset="UTF-8" />
   </component>
 </project>

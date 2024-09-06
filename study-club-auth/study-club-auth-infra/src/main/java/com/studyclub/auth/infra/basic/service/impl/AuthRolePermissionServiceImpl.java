@@ -12,7 +12,7 @@ import java.util.List;
  * (AuthRolePermission)表服务实现类
  *
  * @author makejava
- * @since 2023-11-04 22:16:00
+ * @since 2024-08-30 00:45:50
  */
 @Service("authRolePermissionService")
 public class AuthRolePermissionServiceImpl implements AuthRolePermissionService {

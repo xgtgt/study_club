@@ -8,7 +8,7 @@ import java.util.List;
  * (AuthRolePermission)表数据库访问层
  *
  * @author makejava
- * @since 2023-11-04 22:16:00
+ * @since 2024-08-30 00:45:50
  */
 public interface AuthRolePermissionDao {
 

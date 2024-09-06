@@ -2,11 +2,12 @@ package com.studyclub.auth.common.enums;
 
 import lombok.Getter;
 
+
 /**
- * 删除状态枚举
- * 
- * @author: ChickenWing
- * @date: 2023/10/3
+ * @Author: xgt
+ * @CreateTime: 2024-08-31
+ * @Description:删除状态枚举
+ * @Version: 1.0
  */
 @Getter
 public enum IsDeletedFlagEnum {

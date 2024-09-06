@@ -3,13 +3,12 @@ package com.studyclub.auth.entity;
 import lombok.Data;
 
 import java.io.Serializable;
-import java.util.Date;
 
 /**
- * 用戶信息dto
- *
- * @author: ChickenWing
- * @date: 2023/11/1
+ * @Author: xgt
+ * @CreateTime: 2024-08-31
+ * @Description:用戶信息dto
+ * @Version: 1.0
  */
 @Data
 public class AuthUserDTO implements Serializable {

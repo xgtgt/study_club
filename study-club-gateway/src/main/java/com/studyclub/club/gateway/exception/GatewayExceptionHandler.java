@@ -14,10 +14,10 @@ import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
 /**
- * 网关全局异常处理
- *
- * @author: ChickenWing
- * @date: 2023/10/28
+ * @Author: xgt
+ * @CreateTime: 2024-08-31
+ * @Description:网关全局异常处理
+ * @Version: 1.0
  */
 @Component
 public class GatewayExceptionHandler implements ErrorWebExceptionHandler {

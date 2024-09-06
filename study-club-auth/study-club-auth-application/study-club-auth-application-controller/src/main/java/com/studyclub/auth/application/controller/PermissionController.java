@@ -15,11 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 
+
 /**
- * 权限controller
- *
- * @author: ChickenWing
- * @date: 2023/11/2
+ * @Author: xgt
+ * @CreateTime: 2024-08-31
+ * @Description:权限controller
+ * @Version: 1.0
  */
 @RestController
 @RequestMapping("/permission/")
@@ -40,8 +41,17 @@ public class PermissionController {
             }
             Preconditions.checkArgument(!StringUtils.isBlank(authPermissionDTO.getName()), "权限名称不能为空");
             Preconditions.checkNotNull(authPermissionDTO.getParentId(), "权限父id不能为空");
-            AuthPermissionBO permissionBO = AuthPermissionDTOConverter.INSTANCE.convertDTOToBO(authPermissionDTO);
-            return Result.ok(authPermissionDomainService.add(permissionBO));
+            AuthPermissionBO authPermissionBO = new AuthPermissionBO();
+            authPermissionBO.setId(authPermissionDTO.getId());
+            authPermissionBO.setPermissionKey(authPermissionDTO.getPermissionKey());
+            authPermissionBO.setIcon(authPermissionDTO.getIcon());
+            authPermissionBO.setName(authPermissionDTO.getName());
+            authPermissionBO.setShow(authPermissionDTO.getShow());
+            authPermissionBO.setStatus(authPermissionDTO.getStatus());
+            authPermissionBO.setType(authPermissionDTO.getType());
+            authPermissionBO.setMenuUrl(authPermissionDTO.getMenuUrl());
+            authPermissionBO.setParentId(authPermissionDTO.getParentId());
+            return Result.ok(authPermissionDomainService.add(authPermissionBO));
         } catch (Exception e) {
             log.error("PermissionController.add.error:{}", e.getMessage(), e);
             return Result.fail("新增权限失败");

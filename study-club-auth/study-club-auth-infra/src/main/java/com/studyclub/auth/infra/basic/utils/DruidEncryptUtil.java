@@ -6,10 +6,10 @@ import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
 
 /**
- * 数据库加密util
- *
- * @author: ChickenWing
- * @date: 2023/10/1
+ * @Author: xgt
+ * @CreateTime: 2024-08-30
+ * @Description:数据库加密util
+ * @Version: 1.0
  */
 public class DruidEncryptUtil {
 

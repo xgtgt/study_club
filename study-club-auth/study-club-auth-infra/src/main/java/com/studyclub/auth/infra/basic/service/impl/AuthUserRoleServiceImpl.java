@@ -11,7 +11,7 @@ import javax.annotation.Resource;
  * (AuthUserRole)表服务实现类
  *
  * @author makejava
- * @since 2023-11-03 00:18:09
+ * @since 2024-08-30 00:45:50
  */
 @Service("authUserRoleService")
 public class AuthUserRoleServiceImpl implements AuthUserRoleService {

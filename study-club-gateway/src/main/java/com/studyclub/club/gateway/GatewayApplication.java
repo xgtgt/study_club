@@ -5,10 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 /**
- * 网关启动器
- * 
- * @author: ChickenWing
- * @date: 2023/10/11
+ * @Author: xgt
+ * @CreateTime: 2024-08-31
+ * @Description:网关启动器
+ * @Version: 1.0
  */
 @SpringBootApplication
 @ComponentScan("com.studyclub")

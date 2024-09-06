@@ -8,7 +8,7 @@ import java.util.List;
  * (AuthUser)表服务接口
  *
  * @author makejava
- * @since 2023-11-01 01:25:23
+ * @since 2024-08-30 00:45:50
  */
 public interface AuthUserService {
 

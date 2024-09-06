@@ -15,11 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 
+
 /**
- * 角色权限controller
- *
- * @author: ChickenWing
- * @date: 2023/11/2
+ * @Author: xgt
+ * @CreateTime: 2024-08-31
+ * @Description:角色权限controller
+ * @Version: 1.0
  */
 @RestController
 @RequestMapping("/rolePermission/")
@@ -40,7 +41,11 @@ public class RolePermissionController {
             }
             Preconditions.checkArgument(!CollectionUtils.isEmpty(authRolePermissionDTO.getPermissionIdList()),"权限关联不能为空");
             Preconditions.checkNotNull(authRolePermissionDTO.getRoleId(),"角色不能为空!");
-            AuthRolePermissionBO rolePermissionBO = AuthRolePermissionDTOConverter.INSTANCE.convertDTOToBO(authRolePermissionDTO);
+            AuthRolePermissionBO rolePermissionBO = new AuthRolePermissionBO();
+            rolePermissionBO.setRoleId(authRolePermissionDTO.getRoleId());
+            rolePermissionBO.setPermissionId(authRolePermissionDTO.getPermissionId());
+            rolePermissionBO.setPermissionIdList(authRolePermissionDTO.getPermissionIdList());
+            rolePermissionBO.setId(authRolePermissionDTO.getId());
             return Result.ok(authRolePermissionDomainService.add(rolePermissionBO));
         } catch (Exception e) {
             log.error("PermissionController.add.error:{}", e.getMessage(), e);

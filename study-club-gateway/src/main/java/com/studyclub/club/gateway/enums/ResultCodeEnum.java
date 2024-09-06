@@ -3,10 +3,10 @@ package com.studyclub.club.gateway.enums;
 import lombok.Getter;
 
 /**
- * code枚举
- * 
- * @author: ChickenWing
- * @date: 2023/10/28
+ * @Author: xgt
+ * @CreateTime: 2024-08-31
+ * @Description:code枚举
+ * @Version: 1.0
  */
 @Getter
 public enum ResultCodeEnum {

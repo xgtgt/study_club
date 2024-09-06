@@ -9,7 +9,7 @@ import java.util.List;
  * (AuthPermission)表数据库访问层
  *
  * @author makejava
- * @since 2023-11-03 00:45:50
+ * @since 2024-08-30 00:45:50
  */
 public interface AuthPermissionDao {
 

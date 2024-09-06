@@ -12,12 +12,14 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 
 import java.util.List;
 
+
 /**
- * mvc的全局处理
- *
- * @author: ChickenWing
- * @date: 2023/10/7
+ * @Author: xgt
+ * @CreateTime: 2024-08-31
+ * @Description:mvc全局处理
+ * @Version: 1.0
  */
+
 @Configuration
 public class GlobalConfig extends WebMvcConfigurationSupport {
 

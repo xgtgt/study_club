@@ -12,7 +12,7 @@ import java.util.List;
  * (AuthUser)表服务实现类
  *
  * @author makejava
- * @since 2023-11-01 01:25:23
+ * @since 2024-08-30 00:45:50
  */
 @Service("authUserService")
 public class AuthUserServiceImpl implements AuthUserService {

@@ -7,7 +7,6 @@ import com.google.gson.reflect.TypeToken;
 import com.studyclub.club.gateway.entity.AuthPermission;
 import com.studyclub.club.gateway.entity.AuthRole;
 import com.studyclub.club.gateway.redis.RedisUtil;
-import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -17,10 +16,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * 自定义权限验证接口扩展
- *
- * @author: ChickenWing
- * @date: 2023/10/28
+ * @Author: xgt
+ * @CreateTime: 2024-08-31
+ * @Description:自定义权限验证接口扩展
+ * @Version: 1.0
  */
 @Component
 public class StpInterfaceImpl implements StpInterface {

@@ -6,7 +6,7 @@ import com.studyclub.auth.infra.basic.entity.AuthUserRole;
  * (AuthUserRole)表服务接口
  *
  * @author makejava
- * @since 2023-11-03 00:18:09
+ * @since 2024-08-30 00:45:50
  */
 public interface AuthUserRoleService {
 

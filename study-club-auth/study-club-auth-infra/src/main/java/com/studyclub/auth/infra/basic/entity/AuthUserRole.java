@@ -7,7 +7,7 @@ import java.io.Serializable;
  * (AuthUserRole)实体类
  *
  * @author makejava
- * @since 2023-11-03 00:18:09
+ * @since 2024-08-30 00:45:50
  */
 public class AuthUserRole implements Serializable {
     private static final long serialVersionUID = -34579360091831908L;

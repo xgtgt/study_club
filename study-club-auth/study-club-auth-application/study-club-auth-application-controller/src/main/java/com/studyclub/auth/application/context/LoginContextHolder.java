@@ -4,11 +4,12 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;
 
+
 /**
- * 登录上下文对象
- *
- * @author: ChickenWing
- * @date: 2023/11/26
+ * @Author: xgt
+ * @CreateTime: 2024-08-31
+ * @Description:登录上下文对象
+ * @Version: 1.0
  */
 public class LoginContextHolder {
 

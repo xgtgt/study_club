@@ -8,11 +8,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
+
 /**
- * 用户服务feign
- *
- * @author: ChickenWing
- * @date: 2023/12/3
+ * @Author: xgt
+ * @CreateTime: 2024-08-31
+ * @Description:用户服务feign
+ * @Version: 1.0
  */
 @FeignClient("jc-club-auth-dev")
 public interface UserFeignService {

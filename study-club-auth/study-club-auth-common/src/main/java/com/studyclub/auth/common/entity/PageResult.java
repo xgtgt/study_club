@@ -7,10 +7,10 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * 分页返回实体
- *
- * @author: ChickenWing
- * @date: 2023/10/5
+ * @Author: xgt
+ * @CreateTime: 2024-08-31
+ * @Description:分页返回实体
+ * @Version: 1.0
  */
 @Data
 public class PageResult<T> implements Serializable {
